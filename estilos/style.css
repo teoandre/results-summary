@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+:root {
+    --light-red: rgb(255, 87, 87);
+    --orangey-yellow: rgb(255, 176, 31);
+    --green-teal: rgb(0, 189, 145);
+    --cobalt-blue: rgb(17, 37, 212);
+
+    /*Gradientes*/
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);   
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /*Neutras*/
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+    
+
+
+@media (max-width: 875px) {
+    body {
+        background-color: var(--Light-lavender);
+        display: flex;
+    }
+    
+    main {
+        background-color: var(--White);
+        display: flex;
+        width: 100vw;
+        height: 800px;
+        justify-content: center;
+
+    }
+
+    #results {
+        background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        display: flex;
+        width: 300px;
+        height: 40%;
+        padding: 10px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #results > p, #results > div > p {
+        color: var(--Light-lavender);
+        text-align: center;
+    }
+
+    #circle {
+        background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+        padding: 25px;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #circle > h1 {
+        color: var(--White);
+        font-size: 3em;
+    }
+
+    #circle > p {
+        font-size: 14px;
+    }
+
+    #results > h3 {
+        color: var(--White);
+    }
+
+}
+
+
+@media (min-width: 376px) {
+
+}
