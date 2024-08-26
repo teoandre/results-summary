@@ -35,7 +35,7 @@ p {
 
 /*@media (max-width: 875px)*/
     body {
-        background-color: var(--Light-lavender);
+        background-color: var(--White);
         display: flex;
     }
     
@@ -177,10 +177,24 @@ p {
     }
 
     main {
-        background-color: red;
+        background-color: white;
         flex-direction: row;
         width: 650px;
-        height: 400px;
+        height: 380px;
+        border-radius: 25px;
+        box-shadow: 0 0 20px var(--Light-lavender);
+    }
+
+    #results {
+        height: 380px;
+        border-radius: 25px;
+    }
+
+    #summary {
+        height: 380px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        justify-content: center;
     }
 
     
